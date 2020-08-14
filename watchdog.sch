@@ -1,0 +1,640 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 5EA8C9CD
+P 1700 4900
+AR Path="/5EA8C9CD" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA8C9CD" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 1700 4650 50  0001 C CNN
+F 1 "GND" V 1700 4700 50  0000 C CNN
+F 2 "" H 1700 4900 50  0001 C CNN
+F 3 "" H 1700 4900 50  0001 C CNN
+	1    1700 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA8C9D6
+P 5200 2250
+AR Path="/5EA8C9D6" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA8C9D6" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 5200 2000 50  0001 C CNN
+F 1 "GND" H 5205 2077 50  0000 C CNN
+F 2 "" H 5200 2250 50  0001 C CNN
+F 3 "" H 5200 2250 50  0001 C CNN
+	1    5200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EA8C9DC
+P 5350 2250
+AR Path="/5EA8C9DC" Ref="R?"  Part="1" 
+AR Path="/5EA63CFC/5EA8C9DC" Ref="R8"  Part="1" 
+F 0 "R8" V 5150 2250 50  0000 C CNN
+F 1 "27K" V 5250 2250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5280 2250 50  0001 C CNN
+F 3 "~" H 5350 2250 50  0001 C CNN
+	1    5350 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EA8C9E2
+P 5350 1950
+AR Path="/5EA8C9E2" Ref="R?"  Part="1" 
+AR Path="/5EA63CFC/5EA8C9E2" Ref="R7"  Part="1" 
+F 0 "R7" V 5150 1950 50  0000 C CNN
+F 1 "100K" V 5250 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5280 1950 50  0001 C CNN
+F 3 "~" H 5350 1950 50  0001 C CNN
+	1    5350 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2600 6450 2600 6950
+Wire Wire Line
+	2800 6950 2600 6950
+$Comp
+L Device:R R?
+U 1 1 5EA8C9F8
+P 2950 6950
+AR Path="/5EA8C9F8" Ref="R?"  Part="1" 
+AR Path="/5EA63CFC/5EA8C9F8" Ref="R4"  Part="1" 
+F 0 "R4" V 2750 6950 50  0000 C CNN
+F 1 "10K" V 2850 6950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2880 6950 50  0001 C CNN
+F 3 "~" H 2950 6950 50  0001 C CNN
+	1    2950 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA8C9FE
+P 3100 7250
+AR Path="/5EA8C9FE" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA8C9FE" Ref="#PWR0120"  Part="1" 
+F 0 "#PWR0120" H 3100 7000 50  0001 C CNN
+F 1 "GND" H 3105 7077 50  0000 C CNN
+F 2 "" H 3100 7250 50  0001 C CNN
+F 3 "" H 3100 7250 50  0001 C CNN
+	1    3100 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5EA8CA04
+P 3100 7100
+AR Path="/5EA8CA04" Ref="D?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA04" Ref="D5"  Part="1" 
+F 0 "D5" V 3139 6982 50  0000 R CNN
+F 1 "green" V 3048 6982 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 3100 7100 50  0001 C CNN
+F 3 "~" H 3100 7100 50  0001 C CNN
+	1    3100 7100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EA8CA0A
+P 2600 7100
+AR Path="/5EA8CA0A" Ref="C?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA0A" Ref="C8"  Part="1" 
+F 0 "C8" H 2715 7146 50  0000 L CNN
+F 1 "22µF" H 2715 7055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2638 6950 50  0001 C CNN
+F 3 "~" H 2600 7100 50  0001 C CNN
+	1    2600 7100
+	1    0    0    -1  
+$EndComp
+Connection ~ 2600 6950
+Wire Wire Line
+	2600 6950 2450 6950
+$Comp
+L power:GND #PWR?
+U 1 1 5EA8CA12
+P 2600 7250
+AR Path="/5EA8CA12" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA12" Ref="#PWR0121"  Part="1" 
+F 0 "#PWR0121" H 2600 7000 50  0001 C CNN
+F 1 "GND" H 2605 7077 50  0000 C CNN
+F 2 "" H 2600 7250 50  0001 C CNN
+F 3 "" H 2600 7250 50  0001 C CNN
+	1    2600 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VP #PWR?
+U 1 1 5EA8CA18
+P 2600 6450
+AR Path="/5EA8CA18" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA18" Ref="#PWR0122"  Part="1" 
+F 0 "#PWR0122" H 2750 6400 50  0001 C CNN
+F 1 "+3.3VP" H 2615 6623 50  0000 C CNN
+F 2 "" H 2600 6450 50  0001 C CNN
+F 3 "" H 2600 6450 50  0001 C CNN
+	1    2600 6450
+	1    0    0    -1  
+$EndComp
+Text GLabel 1200 1200 0    50   Input ~ 0
+LED_SDI
+Text GLabel 1200 1300 0    50   Input ~ 0
+LED_CKI
+$Comp
+L MCU_Microchip_SAMD:ATSAMD21E18A-A U?
+U 1 1 5EA8CA26
+P 6800 3500
+AR Path="/5EA8CA26" Ref="U?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA26" Ref="U3"  Part="1" 
+F 0 "U3" H 7430 3546 50  0000 L CNN
+F 1 "ATSAMD21E18A-A" H 7430 3455 50  0000 L CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 7700 1650 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_Data%20Sheet_DS40001882E.pdf" H 6800 3500 50  0001 C CNN
+	1    6800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EA8CA2C
+P 6200 1350
+AR Path="/5EA8CA2C" Ref="C?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA2C" Ref="C9"  Part="1" 
+F 0 "C9" V 6050 1450 50  0000 R CNN
+F 1 "1µF" V 5950 1450 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6238 1200 50  0001 C CNN
+F 3 "~" H 6200 1350 50  0001 C CNN
+	1    6200 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA8CA32
+P 5900 1350
+AR Path="/5EA8CA32" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA32" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 5900 1100 50  0001 C CNN
+F 1 "GND" H 5905 1177 50  0000 C CNN
+F 2 "" H 5900 1350 50  0001 C CNN
+F 3 "" H 5900 1350 50  0001 C CNN
+	1    5900 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA8CA38
+P 5500 5600
+AR Path="/5EA8CA38" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA38" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H 5500 5350 50  0001 C CNN
+F 1 "GND" H 5505 5427 50  0000 C CNN
+F 2 "" H 5500 5600 50  0001 C CNN
+F 3 "" H 5500 5600 50  0001 C CNN
+	1    5500 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5EA8CA3E
+P 5700 5600
+AR Path="/5EA8CA3E" Ref="SW?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA3E" Ref="SW1"  Part="1" 
+F 0 "SW1" H 5700 5885 50  0000 C CNN
+F 1 "SW_Reset" H 5700 5794 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 5700 5800 50  0001 C CNN
+F 3 "~" H 5700 5800 50  0001 C CNN
+	1    5700 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 1600 7100 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5EA8CA45
+P 6800 5400
+AR Path="/5EA8CA45" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA45" Ref="#PWR0125"  Part="1" 
+F 0 "#PWR0125" H 6800 5150 50  0001 C CNN
+F 1 "GND" H 6805 5227 50  0000 C CNN
+F 2 "" H 6800 5400 50  0001 C CNN
+F 3 "" H 6800 5400 50  0001 C CNN
+	1    6800 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1350 6050 1350
+Wire Wire Line
+	6350 1350 6500 1350
+Wire Wire Line
+	6500 1350 6500 1600
+$Comp
+L LED:APA102-2020 D?
+U 1 1 5EA8CA4E
+P 1500 1300
+AR Path="/5EA8CA4E" Ref="D?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA4E" Ref="D4"  Part="1" 
+F 0 "D4" H 1600 1650 50  0000 C CNN
+F 1 "APA102-2020" H 1800 1550 50  0000 C CNN
+F 2 "LED_SMD:LED-APA102-2020" H 1550 1000 50  0001 L TNN
+F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 1600 925 50  0001 L TNN
+	1    1500 1300
+	1    0    0    -1  
+$EndComp
+Text GLabel 6100 2000 0    50   Output ~ 0
+LED_CKI
+Text GLabel 6100 1900 0    50   Output ~ 0
+LED_SDI
+$Comp
+L power:GND #PWR?
+U 1 1 5EA8CA56
+P 1500 1600
+AR Path="/5EA8CA56" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA56" Ref="#PWR0126"  Part="1" 
+F 0 "#PWR0126" H 1500 1350 50  0001 C CNN
+F 1 "GND" H 1505 1427 50  0000 C CNN
+F 2 "" H 1500 1600 50  0001 C CNN
+F 3 "" H 1500 1600 50  0001 C CNN
+	1    1500 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA8CA64
+P 4550 5200
+AR Path="/5EA8CA64" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA64" Ref="#PWR0127"  Part="1" 
+F 0 "#PWR0127" H 4550 4950 50  0001 C CNN
+F 1 "GND" H 4555 5027 50  0000 C CNN
+F 2 "" H 4550 5200 50  0001 C CNN
+F 3 "" H 4550 5200 50  0001 C CNN
+	1    4550 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4400 6100 4400
+Text GLabel 6100 4900 0    50   BiDi ~ 0
+SAMD_SWC
+Text GLabel 6100 5000 0    50   BiDi ~ 0
+SAMD_SWD
+$Comp
+L Device:R R?
+U 1 1 5EA8CA76
+P 5950 2900
+AR Path="/5EA8CA76" Ref="R?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA76" Ref="R9"  Part="1" 
+F 0 "R9" V 5850 2900 50  0000 C CNN
+F 1 "1.5K" V 5750 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5880 2900 50  0001 C CNN
+F 3 "~" H 5950 2900 50  0001 C CNN
+	1    5950 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5EA8CA7C
+P 5500 3050
+AR Path="/5EA8CA7C" Ref="D?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA7C" Ref="D6"  Part="1" 
+F 0 "D6" V 5539 2932 50  0000 R CNN
+F 1 "red" V 5448 2932 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5500 3050 50  0001 C CNN
+F 3 "~" H 5500 3050 50  0001 C CNN
+	1    5500 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 2900 5500 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5EA8CA83
+P 5500 3200
+AR Path="/5EA8CA83" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA83" Ref="#PWR0128"  Part="1" 
+F 0 "#PWR0128" H 5500 2950 50  0001 C CNN
+F 1 "GND" H 5505 3027 50  0000 C CNN
+F 2 "" H 5500 3200 50  0001 C CNN
+F 3 "" H 5500 3200 50  0001 C CNN
+	1    5500 3200
+	1    0    0    -1  
+$EndComp
+Text Notes 7100 6850 0    50   ~ 0
+"Trinket M0"
+$Comp
+L power:+3.3VP #PWR?
+U 1 1 5EA8CA8A
+P 6700 1600
+AR Path="/5EA8CA8A" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA8A" Ref="#PWR0129"  Part="1" 
+F 0 "#PWR0129" H 6850 1550 50  0001 C CNN
+F 1 "+3.3VP" H 6715 1773 50  0000 C CNN
+F 2 "" H 6700 1600 50  0001 C CNN
+F 3 "" H 6700 1600 50  0001 C CNN
+	1    6700 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 6700 1600
+$Comp
+L power:+5VP #PWR?
+U 1 1 5EA8CA91
+P 5150 3700
+AR Path="/5EA8CA91" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA91" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR0130" H 5150 3550 50  0001 C CNN
+F 1 "+5VP" V 5165 3828 50  0000 L CNN
+F 2 "" H 5150 3700 50  0001 C CNN
+F 3 "" H 5150 3700 50  0001 C CNN
+	1    5150 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3VP #PWR?
+U 1 1 5EA8CA98
+P 1500 1000
+AR Path="/5EA8CA98" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CA98" Ref="#PWR0131"  Part="1" 
+F 0 "#PWR0131" H 1650 950 50  0001 C CNN
+F 1 "+3.3VP" H 1515 1173 50  0000 C CNN
+F 2 "" H 1500 1000 50  0001 C CNN
+F 3 "" H 1500 1000 50  0001 C CNN
+	1    1500 1000
+	1    0    0    -1  
+$EndComp
+Text GLabel 6100 5200 0    50   Input ~ 0
+SAMD_RESET
+Wire Wire Line
+	6100 5200 6100 5600
+Wire Wire Line
+	6100 5600 5900 5600
+$Comp
+L power:+3.3VP #PWR?
+U 1 1 5EA8CAA8
+P 1700 4800
+AR Path="/5EA8CAA8" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA8CAA8" Ref="#PWR0132"  Part="1" 
+F 0 "#PWR0132" H 1850 4750 50  0001 C CNN
+F 1 "+3.3VP" V 1700 5050 50  0000 C CNN
+F 2 "" H 1700 4800 50  0001 C CNN
+F 3 "" H 1700 4800 50  0001 C CNN
+	1    1700 4800
+	0    1    1    0   
+$EndComp
+Text GLabel 1700 5000 2    50   Output ~ 0
+SAMD_RESET
+Text GLabel 1700 4700 2    50   BiDi ~ 0
+SAMD_SWC
+Text GLabel 1700 4600 2    50   BiDi ~ 0
+SAMD_SWD
+Wire Wire Line
+	1200 6950 1450 6950
+Wire Wire Line
+	1200 6750 1200 6950
+$Comp
+L Device:D_Schottky D?
+U 1 1 5EA92E3C
+P 1200 6600
+AR Path="/5EA92E3C" Ref="D?"  Part="1" 
+AR Path="/5EA63CFC/5EA92E3C" Ref="D2"  Part="1" 
+F 0 "D2" V 1250 6800 50  0000 R CNN
+F 1 "D_Schottky" V 1150 7100 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-128" H 1200 6600 50  0001 C CNN
+F 3 "~" H 1200 6600 50  0001 C CNN
+	1    1200 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5VP #PWR?
+U 1 1 5EA92E42
+P 1200 6450
+AR Path="/5EA92E42" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA92E42" Ref="#PWR0133"  Part="1" 
+F 0 "#PWR0133" H 1200 6300 50  0001 C CNN
+F 1 "+5VP" H 1215 6623 50  0000 C CNN
+F 2 "" H 1200 6450 50  0001 C CNN
+F 3 "" H 1200 6450 50  0001 C CNN
+	1    1200 6450
+	1    0    0    -1  
+$EndComp
+Connection ~ 1450 6950
+Wire Wire Line
+	1450 6750 1450 6950
+$Comp
+L Device:D_Schottky D?
+U 1 1 5EA92E50
+P 1450 6600
+AR Path="/5EA92E50" Ref="D?"  Part="1" 
+AR Path="/5EA63CFC/5EA92E50" Ref="D3"  Part="1" 
+F 0 "D3" V 1496 6520 50  0000 R CNN
+F 1 "D_Schottky" V 1405 6520 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-128" H 1450 6600 50  0001 C CNN
+F 3 "~" H 1450 6600 50  0001 C CNN
+	1    1450 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA92E56
+P 1450 7250
+AR Path="/5EA92E56" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA92E56" Ref="#PWR0134"  Part="1" 
+F 0 "#PWR0134" H 1450 7000 50  0001 C CNN
+F 1 "GND" H 1455 7077 50  0000 C CNN
+F 2 "" H 1450 7250 50  0001 C CNN
+F 3 "" H 1450 7250 50  0001 C CNN
+	1    1450 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 6950 1450 6950
+$Comp
+L Device:C C?
+U 1 1 5EA92E5E
+P 1450 7100
+AR Path="/5EA92E5E" Ref="C?"  Part="1" 
+AR Path="/5EA63CFC/5EA92E5E" Ref="C7"  Part="1" 
+F 0 "C7" H 1565 7146 50  0000 L CNN
+F 1 "10µF" H 1565 7055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1488 6950 50  0001 C CNN
+F 3 "~" H 1450 7100 50  0001 C CNN
+	1    1450 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA92E65
+P 2150 7250
+AR Path="/5EA92E65" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA92E65" Ref="#PWR0135"  Part="1" 
+F 0 "#PWR0135" H 2150 7000 50  0001 C CNN
+F 1 "GND" H 2155 7077 50  0000 C CNN
+F 2 "" H 2150 7250 50  0001 C CNN
+F 3 "" H 2150 7250 50  0001 C CNN
+	1    2150 7250
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	650  7650 3550 7650
+Wire Notes Line
+	3550 7650 3550 6050
+Wire Notes Line
+	3550 6050 650  6050
+Wire Notes Line
+	650  6050 650  7650
+Text Notes 700  6150 0    50   ~ 0
+Power supply
+Text Notes 1250 4050 0    50   ~ 0
+SWD/J-Tag
+Wire Notes Line
+	3300 5500 3300 3800
+Wire Notes Line
+	3300 3800 850  3800
+Wire Notes Line
+	850  3800 850  5500
+Wire Notes Line
+	850  5500 3300 5500
+Text Notes 850  850  0    50   ~ 0
+RGB-LED
+Text HLabel 6100 2700 0    50   BiDi ~ 0
+SDA
+Text HLabel 6100 2800 0    50   Input ~ 0
+SCL
+Text HLabel 6100 2600 0    50   Input ~ 0
+PiAct
+Text HLabel 6100 2500 0    50   Output ~ 0
+5V_ENA
+Wire Wire Line
+	5500 1950 5500 2100
+Wire Wire Line
+	6100 2100 5500 2100
+Connection ~ 5500 2100
+Wire Wire Line
+	5500 2100 5500 2250
+$Comp
+L Regulator_Linear:AZ1117-3.3 U2
+U 1 1 5EB5AE0D
+P 2150 6950
+F 0 "U2" H 2150 7192 50  0000 C CNN
+F 1 "AZ1117-3.3" H 2150 7101 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 2150 7200 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 2150 6950 50  0001 C CNN
+	1    2150 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0136
+U 1 1 5EC1DECF
+P 1450 6450
+F 0 "#PWR0136" H 1450 6300 50  0001 C CNN
+F 1 "+12V" H 1465 6623 50  0000 C CNN
+F 2 "" H 1450 6450 50  0001 C CNN
+F 3 "" H 1450 6450 50  0001 C CNN
+	1    1450 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J3
+U 1 1 5ED3C564
+P 1500 4800
+F 0 "J3" H 1608 5181 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 1608 5090 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0510_1x05_P1.25mm_Vertical" H 1500 4800 50  0001 C CNN
+F 3 "~" H 1500 4800 50  0001 C CNN
+	1    1500 4800
+	1    0    0    -1  
+$EndComp
+Text Label 5250 4400 0    50   ~ 0
+USB_D+
+Text Label 5250 4300 0    50   ~ 0
+USB_D-
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J4
+U 1 1 5E99A8FB
+P 4550 4300
+F 0 "J4" H 4657 5167 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 4657 5076 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 4700 4300 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4700 4300 50  0001 C CNN
+	1    4550 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 5200 4550 5200
+Connection ~ 4550 5200
+Wire Wire Line
+	5150 4300 5150 4200
+Wire Wire Line
+	5150 4500 5150 4400
+Connection ~ 5150 4400
+Wire Wire Line
+	5150 4300 6100 4300
+Connection ~ 5150 4300
+$Comp
+L Device:R R?
+U 1 1 5EA5D0C9
+P 5300 3900
+AR Path="/5EA5D0C9" Ref="R?"  Part="1" 
+AR Path="/5EA63CFC/5EA5D0C9" Ref="R5"  Part="1" 
+F 0 "R5" V 5400 3900 50  0000 C CNN
+F 1 "5K1" V 5400 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5230 3900 50  0001 C CNN
+F 3 "~" H 5300 3900 50  0001 C CNN
+	1    5300 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EA5DD4A
+P 5300 4000
+AR Path="/5EA5DD4A" Ref="R?"  Part="1" 
+AR Path="/5EA63CFC/5EA5DD4A" Ref="R6"  Part="1" 
+F 0 "R6" V 5200 4000 50  0000 C CNN
+F 1 "5K1" V 5200 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5230 4000 50  0001 C CNN
+F 3 "~" H 5300 4000 50  0001 C CNN
+	1    5300 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5450 3900 5450 4000
+$Comp
+L power:GND #PWR?
+U 1 1 5EA61B8E
+P 5650 3900
+AR Path="/5EA61B8E" Ref="#PWR?"  Part="1" 
+AR Path="/5EA63CFC/5EA61B8E" Ref="#PWR0137"  Part="1" 
+F 0 "#PWR0137" H 5650 3650 50  0001 C CNN
+F 1 "GND" H 5655 3727 50  0000 C CNN
+F 2 "" H 5650 3900 50  0001 C CNN
+F 3 "" H 5650 3900 50  0001 C CNN
+	1    5650 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3900 5450 3900
+Connection ~ 5450 3900
+NoConn ~ 5150 4900
+NoConn ~ 5150 4800
+$Comp
+L power:+12P #PWR0138
+U 1 1 5F27EEA2
+P 5200 1950
+F 0 "#PWR0138" H 5200 1800 50  0001 C CNN
+F 1 "+12P" H 5215 2123 50  0000 C CNN
+F 2 "" H 5200 1950 50  0001 C CNN
+F 3 "" H 5200 1950 50  0001 C CNN
+	1    5200 1950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
